@@ -4,6 +4,7 @@
 
 body {
     background-color: palette.$background-color;
+    margin: 0px;
 }
 
 h1 {
@@ -25,6 +26,9 @@ p {
 .container {
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
     li {
         font-family: fonts.$main-font;
         font-weight: 400;
@@ -48,12 +52,14 @@ p {
 .intro {
     margin: 0px;
     padding-top: 100px;
+    padding-bottom: 0px;
     display: flex;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background-position: center bottom;
     background-size: cover;
     background-image: url("./Images/layered-waves-haikei.png");
+    justify-content: space-between;
 
     &__header {
         /* Lianna Pyman Junior Software Engineer */
@@ -65,16 +71,18 @@ p {
         font-weight: 500;
         font-size: 48px;
         line-height: 71px;
-        display: flex;
         align-items: center;
         align-content: flex-start;
         letter-spacing: 0.2em;
+        margin-left: 50px;
+        margin-top: 0px;
     }
 
     &__para {
         width: 312px;
         height: 277px;
-        padding: 40px;
+        margin-right: 50px;
+        margin-top: 0px;
 
         font-style: normal;
         font-weight: 400;
@@ -85,7 +93,6 @@ p {
         align-items: flex-end;
         flex-wrap: nowrap;
         flex-direction: row;
-        align-content: flex-end;
         text-align: right;
 
         color: palette.$main-color;
@@ -94,11 +101,15 @@ p {
 
 //Skills
 .skills {
-    padding-top: 50px;
+    background-image: url("./Images/layered-waves-down.png");
+    background-size: cover;
+    background-position: center top;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    height: 100vh;
+    justify-content: space-between;
 
     &--spacing {
         margin-bottom: 50px;
@@ -123,38 +134,36 @@ p {
     }
 
     &__icons {
-        display: flex;
+        display: grid;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
         text-align: center;
         flex-wrap: nowrap;
         color: palette.$main-color;
-
-        &__second {
-            display: flex;
-            padding: 50px;
-            justify-content: space-evenly;
-        }
     }
 }
 
+.icon {
+    font-size: x-large;
+}
+
 .projects {
-    padding: 50px;
     justify-content: center;
     font-family: fonts.$main-font;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    height: 100vh;
 
     &__headerOne {
-        padding-top: 30px;
-        display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
     &__headerThree {
-        display: flex;
         justify-content: center;
         color: palette.$main-color;
     }
@@ -163,6 +172,8 @@ p {
 .contact {
     display: flex;
     color: palette.$main-color;
+    flex-direction: column;
+    height: 100vh;
 
     &__icons {
         justify-content: space-around;
