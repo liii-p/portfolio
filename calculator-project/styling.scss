@@ -1,0 +1,72 @@
+@use "./palette.scss";
+
+* {
+    color: white;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// .container {
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// background-color: palette.$body-color;
+// }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc {
+    height: 95vh;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10vh auto 0 auto;
+    background-color: palette.$body-color;
+
+    &__display {
+        text-align: right;
+        height: 100px;
+        min-width: 100%;
+        max-width: inherit;
+        line-height: 100px;
+        padding: 16px 8px;
+        font-size: 25px;
+        border: 1px solid palette.$body-color;
+
+        &__text {
+            // border: 2px solid palette.$shadow-color;
+            margin: 1rem;
+            font-size: 1rem;
+        }
+    }
+    &__button {
+        line-height: 70px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 3px;
+        background-color: palette.$button-color;
+        text-align: center;
+
+        &__border {
+            // border-top: 1px solid black;
+            // border-right: 1px solid black;
+            border: 1px solid palette.$shadow-color;
+            border-radius: 20px;
+            outline: palette.$shadow-color;
+        }
+    }
+}
+
+// .buttons {
+//     border-bottom: 1px solid black;
+//     border-left: 1px solid black;
+// }
