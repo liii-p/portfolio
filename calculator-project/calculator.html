@@ -10,8 +10,9 @@
     <body>
         <section>
             <div class="calc">
-                <div class="calc__display"></div>
-                <p class="calc__display__text"></p>
+                <div class="calc__display">
+                    <p class="calc__display__text">0123456789</p>
+                </div>
                 <div class="calc__button">
                     <div class="calc__button calc__button__border">MC</div>
                     <div class="calc__button calc__button__border">MR</div>
@@ -33,14 +34,34 @@
                     <div class="calc__button calc__button__border">6</div>
                     <div class="calc__button calc__button__border">*</div>
                     <div class="calc__button calc__button__border">1/x</div>
-                    <div class="calc__button calc__button__border">1</div>
-                    <div class="calc__button calc__button__border">2</div>
-                    <div class="calc__button calc__button__border">3</div>
-                    <div class="calc__button calc__button__border">-</div>
-                    <div class="calc__button calc__button__border">0</div>
-                    <div class="calc__button calc__button__border">.</div>
-                    <div class="calc__button calc__button__border">+</div>
-                    <div id="equal" class="calc__button calc__button__border">
+                    <div class="calc__button calc__button__border special">
+                        1
+                    </div>
+                    <div class="calc__button calc__button__border special">
+                        2
+                    </div>
+                    <div class="calc__button calc__button__border special">
+                        3
+                    </div>
+                    <div class="calc__button calc__button__border special">
+                        -
+                    </div>
+                    <div
+                        class="calc__button calc__button__border special"
+                        id="zero"
+                    >
+                        0
+                    </div>
+                    <div class="calc__button calc__button__border special">
+                        .
+                    </div>
+                    <div class="calc__button calc__button__border special">
+                        +
+                    </div>
+                    <div
+                        id="equal"
+                        class="calc__button calc__button__border special"
+                    >
                         =
                     </div>
                 </div>
