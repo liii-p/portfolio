@@ -14,13 +14,8 @@
 // background-color: palette.$body-color;
 // }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .calc {
-    height: 95vh;
+    height: 600px;
     max-width: 425px;
     width: 100%;
     display: flex;
@@ -28,22 +23,23 @@ body {
     border-radius: 20px;
     border-bottom: 4px solid palette.$button-color;
     border-right: 4px solid palette.$button-color;
-    overflow: hidden;
+    // overflow: hidden;
     margin: 10vh auto 0 auto;
     background-color: palette.$body-color;
+    position: relative;
 
-    &__display {
+    &-display {
         background: #d8dbda;
         border: solid 3px palette.$shadow-color;
         width: 90%;
-        height: 100px;
-        margin-bottom: 40px;
+        height: 15%;
+        margin-bottom: 20px;
         border-radius: 20px;
         display: flex;
         margin-left: 20px;
         margin-top: 20px;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
 
         &__text {
             display: flex;
@@ -54,43 +50,41 @@ body {
         }
     }
 
-    &__button {
-        display: flex;
-        line-height: 68px;
-        font-size: 1.5rem;
-        width: 75px;
-        cursor: pointer;
+    &__pad {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 3px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__button {
+        line-height: 68px;
+        font-size: 1.5rem;
+        width: 68px;
+        cursor: pointer;
         background-color: palette.$button-color;
         text-align: center;
 
         &__border {
-            // border-top: 1px solid black;
-            // border-right: 1px solid black;
-            border: 1px solid palette.$shadow-color;
             border-radius: 20px;
-            outline: palette.$shadow-color;
-        }
-    }
-
-    .special {
-        grid-template-columns: none;
-        border: 2px solid black;
-
-        #zero {
-            border: 2px solid black;
-            width: 40px;
-        }
-
-        #equal {
-            border: 2px solid black;
+            border-right: 2px solid palette.$shadow-color;
+            border-bottom: 2px solid palette.$shadow-color;
         }
     }
 }
 
-// .buttons {
-//     border-bottom: 1px solid black;
-//     border-left: 1px solid black;
-// }
+#zero {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    width: auto;
+}
+#equal {
+    grid-row: 5 / span 2;
+    grid-column: 5;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
