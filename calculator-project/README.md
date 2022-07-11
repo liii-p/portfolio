@@ -1,14 +1,5 @@
 For this calculator project, I want to emulate a pink calculator, refer to pink-calculator2.jpg
 
-FOR HTML:
-
--   Make the display w/HTML and CSS
--   Make buttons (non-functional)
-
-BUTTONS:
-First, get buttons working - they need to render to the page in the appropriate spot and actually function.
-Create arrays, loops or whatever to enable the numbers to be put together until an operational button is pressed, etc.
-
 CRITERIA
 Using HTML & CSS:
 
@@ -24,3 +15,8 @@ Does not need to support order of operations
 Handle decimals
 
 Should NOT use eval() or Function() constructor
+
+TO ACHIEVE THE DESIRED OUTCOME:
+After establishing HTML and CSS, each individual button will need to be scripted.
+The display needs to show zero as default and reset to zero when triggered.
+More advanced calculator functions such as 1/x and the memory storage may be implemented at a later time - first it is important to make the basic calculator functions - functional.

@@ -10,9 +10,7 @@
     <body>
         <section>
             <div class="calc">
-                <div class="calc-display">
-                    <p class="calc-display__text">0123456789</p>
-                </div>
+                <div id="calc-display"></div>
                 <div class="calc__pad">
                     <div class="calc__button calc__button__border">MC</div>
                     <div class="calc__button calc__button__border">MR</div>
@@ -20,51 +18,46 @@
                     <div class="calc__button calc__button__border">M+</div>
                     <div class="calc__button calc__button__border">M-</div>
                     <div class="calc__button calc__button__border">&lt;</div>
-                    <div class="calc__button calc__button__border">CE</div>
-                    <div class="calc__button calc__button__border">C</div>
-                    <div class="calc__button calc__button__border">+-</div>
+                    <div class="calc__button calc__button__border" id="del">
+                        CE
+                    </div>
+                    <div class="calc__button calc__button__border" id="clear">
+                        C
+                    </div>
+                    <div class="calc__button calc__button__border" id="pm">
+                        +-
+                    </div>
                     <div class="calc__button calc__button__border">V</div>
                     <div class="calc__button calc__button__border">7</div>
                     <div class="calc__button calc__button__border">8</div>
                     <div class="calc__button calc__button__border">9</div>
                     <div class="calc__button calc__button__border">/</div>
-                    <div class="calc__button calc__button__border">%</div>
-                    <!-- </div> -->
-
-                    <!-- <div class="calc-row"> -->
+                    <div class="calc__button calc__button__border" id="percent">
+                        %
+                    </div>
                     <div class="calc__button calc__button__border">4</div>
                     <div class="calc__button calc__button__border">5</div>
                     <div class="calc__button calc__button__border">6</div>
-                    <div class="calc__button calc__button__border">*</div>
-                    <div class="calc__button calc__button__border">1/x</div>
                     <div class="calc__button calc__button__border special">
-                        1
+                        *
                     </div>
                     <div class="calc__button calc__button__border special">
-                        2
+                        1/x
                     </div>
-                    <div class="calc__button calc__button__border special">
-                        3
-                    </div>
+                    <div class="calc__button calc__button__border">1</div>
+                    <div class="calc__button calc__button__border">2</div>
+                    <div class="calc__button calc__button__border">3</div>
                     <div class="calc__button calc__button__border special">
                         -
                     </div>
-                    <div
-                        id="equal"
-                        class="calc__button calc__button__border special"
-                    >
+                    <div id="equal" class="calc__button calc__button__border">
                         =
                     </div>
 
-                    <div
-                        class="calc__button calc__button__border special"
-                        id="zero"
-                    >
+                    <div class="calc__button calc__button__border" id="zero">
                         0
                     </div>
-                    <div class="calc__button calc__button__border special">
-                        .
-                    </div>
+                    <div class="calc__button calc__button__border">.</div>
                     <div class="calc__button calc__button__border special">
                         +
                     </div>
@@ -73,5 +66,5 @@
             <p>Built by Lianna</p>
         </section>
     </body>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </html>
