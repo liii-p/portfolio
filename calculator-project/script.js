@@ -1,18 +1,47 @@
 console.log("Hello World");
+
 // Changes text content of an element
 const changeElementText = (text, element) => {
     element.textContent = text;
 };
+
+// Evaluate function
+const evaluate = (stored, current, operator) => {
+    let result;
+
+    switch (operator) {
+        case "+":
+            result = Number(stored) + Number(current);
+            break;
+        case "-":
+            result = Number(stored) - Number(current);
+            break;
+        case "/":
+            result = Number(stored) / Number(current);
+            break;
+        case "%":
+            result = Number(stored) % Number(current);
+            break;
+        case "*":
+            result = Number(stored) * Number(current);
+            break;
+        default:
+            result = current;
+    }
+};
+
 // Variables to store calculation values
 let storedVal = 0;
 let currentOp = "=";
 let startNextInput = false;
 
 // Variables for target elements
-const display = document.querySelector(".calc__display");
+const display = document.querySelector("#calc-display");
 const allClearBtn = document.querySelector("#clear");
-const numberBtns = document.querySelectorAll(".calc__button"); // NodeList
-const operationsBtns = document.querySelectorAll(".special"); // NodeList
+const delBtn = document.querySelector("#del");
+const numberBtns = document.querySelectorAll(".calc__button");
+const operationsBtns = document.querySelectorAll(".special");
+const equalsBtn = document.querySelector("#equal");
 const pctBtn = document.getElementById("percent");
 const pmBtn = document.getElementById("pm");
 
@@ -62,11 +91,9 @@ const numClick = (num) => {
 const equals = () => {
     // Store currently displayed value
     const currentVal = display.textContent;
-    // console.log(storedVal, currentOp, currentVal);
 
     // Evaluate the math operation using storedVal, currentVal, and current operator
     const result = evaluate(storedVal, currentVal, currentOp);
-    // console.log("=", result);
 
     // Change the display to the new value
     changeElementText(result, display);
@@ -74,7 +101,6 @@ const equals = () => {
     // Store the new value and allow the next input
     storedVal = result;
     startNextInput = true;
-    // console.log("storedVal is ", storedVal);
 };
 
 // Event Listeners
@@ -83,11 +109,16 @@ allClearBtn.addEventListener("click", () => {
     resetDisplay();
 });
 
+delBtn.addEventListener("click", () => {
+    display.textContent = display.textContent.slice(0, -1);
+
+    // currentOp =
+});
+
 // Number Buttons - takes value of button clicked and changes display
 numberBtns.forEach((numBtn) => {
     numBtn.addEventListener("click", () => {
         const num = numBtn.textContent.trim();
-        // console.log(num);
         numClick(num);
     });
 });
@@ -99,20 +130,23 @@ operationsBtns.forEach((operator) => {
     operator.addEventListener("click", () => {
         // Evaluate the previous operation first
         equals();
-        // console.log("Prev operator: ", currentOp);
+
         // Register the new operation
-        currentOp = operator.textContent.trim();
-        // console.log("New operator: ", currentOp);
+        currentOp = operator.textContent;
     });
+});
+
+equalsBtn.addEventListener("click", (operator) => {
+    changeElementText(display.textContent, evaluate());
 });
 
 // Special Buttons
 // % Divides displayed number by 100
 pctBtn.addEventListener("click", () => {
-    changeElementText(shorten(display.textContent / 100), display);
+    changeElementText(display.textContent / 100, display);
 });
 
 // +/- negates displayed number
 pmBtn.addEventListener("click", () => {
-    changeElementText(shorten(display.textContent * -1), display);
+    changeElementText(display.textContent * -1, display);
 });
