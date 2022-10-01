@@ -1,0 +1,48 @@
+@use "../Assets/partials/devices.scss";
+
+.project {
+  display: flex;
+  flex-direction: column;
+
+  @include devices.phone {
+    &__morse > img {
+      height: 132px;
+      width: auto;
+    }
+
+    &__books > img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 200px;
+      width: auto;
+    }
+
+    &__calc > img {
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  @include devices.large-phone {
+    h2 {
+      font-size: 35px;
+    }
+
+    &__morse > img {
+      height: 185px;
+      width: auto;
+    }
+
+    &__books > img {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 280px;
+      width: auto;
+    }
+
+    &__calc > img {
+      height: 320px;
+      width: auto;
+    }
+  }
+}

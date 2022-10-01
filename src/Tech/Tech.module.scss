@@ -1,0 +1,23 @@
+@use "../Assets/partials/devices.scss";
+@use "../Assets/partials/palette.scss";
+
+.Tech {
+  line-height: 2.5rem;
+  border-bottom: 1.5px solid grey;
+
+  @include devices.phone {
+    &__stack1 {
+      margin-bottom: 10px;
+    }
+
+    &__stack2 {
+      margin-top: 10px;
+    }
+  }
+
+  @include devices.large-phone {
+    h2 {
+      font-size: 35px;
+    }
+  }
+}

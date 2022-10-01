@@ -1,0 +1,44 @@
+@use "../Assets/partials/devices.scss";
+
+.Navbar {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  height: 5em;
+  width: 100%;
+  font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
+  padding: 1em;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+  }
+
+  &__icon {
+    @include devices.phone {
+      height: 30px;
+      width: auto;
+    }
+    @include devices.large-phone {
+      height: 50px;
+      width: auto;
+    }
+  }
+}
+
+.menuVisible {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 13.5%;
+}
+
+.menuHidden {
+  visibility: hidden;
+  position: fixed;
+  left: 100%;
+}

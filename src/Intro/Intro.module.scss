@@ -1,0 +1,52 @@
+@use "./../Assets/partials/devices.scss";
+@use "./../Assets/partials/palette.scss";
+@use "./../Assets/partials/fonts.scss";
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1.5px solid grey;
+
+  h1 {
+    color: palette.$title;
+    font-family: "Rubik", sans-serif;
+
+    @include devices.large-phone {
+      font-size: 50px;
+    }
+  }
+
+  h2 {
+    color: palette.$accent;
+    font-family: "Rubik", sans-serif;
+
+    @include devices.large-phone {
+      font-size: 35px;
+    }
+  }
+
+  &__para {
+    font-family: "Inconsolata", monospace;
+    @include devices.phone {
+      margin: 0 auto;
+      color: palette.$body;
+      text-align: left;
+      width: 20rem;
+      height: auto;
+      line-height: 40px;
+    }
+    @include devices.large-phone {
+      line-height: 45px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 20rem;
+    height: auto;
+  }
+}

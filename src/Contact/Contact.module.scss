@@ -1,0 +1,16 @@
+@use "../Assets/partials/devices.scss";
+
+.contact {
+  display: block;
+  margin-top: 5rem;
+
+  &__linkedin {
+    margin-right: 20px;
+  }
+
+  @include devices.large-phone {
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
