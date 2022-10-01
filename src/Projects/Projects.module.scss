@@ -10,11 +10,14 @@
       width: auto;
     }
 
-    &__books > img {
+    &__books {
       margin-top: 20px;
       margin-bottom: 20px;
-      height: 200px;
-      width: auto;
+
+      > img {
+        height: 200px;
+        width: auto;
+      }
     }
 
     &__calc > img {
@@ -33,11 +36,14 @@
       width: auto;
     }
 
-    &__books > img {
+    &__books {
       margin-top: 30px;
       margin-bottom: 30px;
-      height: 280px;
-      width: auto;
+
+      > img {
+        height: 280px;
+        width: auto;
+      }
     }
 
     &__calc > img {

@@ -18,7 +18,14 @@ const Intro = () => {
         can never have too much Batman. <br />I love building React applications
         for fun, as well as challenging myself to learn new technologies and
         languages. I even like to learn spoken languages like Korean and
-        Chinese!
+        Chinese! <br />
+        What am I currently working on? <br /> - This portfolio! <br /> - A
+        react project inspired by Marvel's Daredevil (check it out{" "}
+        <a href="https://github.com/liii-p/daredevil" target="blank">
+          here!
+        </a>
+        ) <br /> - An Angry Birds(TM) clone using unity game engine <br /> - And
+        more!
       </p>
       <img src={BatmanLogo} className={styles.Intro__img} alt="batman logo" />
     </div>
