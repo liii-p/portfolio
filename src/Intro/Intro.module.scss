@@ -50,4 +50,8 @@
     width: 20rem;
     height: auto;
   }
+
+  &__img:hover {
+    transform: scale(2);
+  }
 }

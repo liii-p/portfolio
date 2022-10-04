@@ -13,10 +13,14 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <GiHamburgerMenu onClick={openMenu} className={styles.Navbar__icon} />
-      <div
+      <nav
         className={showMenu ? styles.menuVisible : styles.menuHidden}
         onClick={openMenu}
       >
+        <a href="#intro">Home</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="projects">Projects</a>
+        <a href="#contact">Contact</a>
         {/* <HashLink
           to="/#intro"
           scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
@@ -41,7 +45,7 @@ const Navbar = () => {
         >
           Contact
         </HashLink> */}
-      </div>
+      </nav>
     </div>
   );
 };
