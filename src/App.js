@@ -4,7 +4,6 @@ import Tech from "./Tech/Tech";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Navbar from "./Navbar/Navbar";
-import { Router } from "react-router-dom";
 
 function App() {
   return (

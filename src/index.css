@@ -10,6 +10,7 @@ body {
 
 html {
   background-color: #e8d7f1;
+  scroll-behavior: smooth;
 }
 
 code {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "../Navbar/Navbar.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,8 +17,8 @@ const Navbar = () => {
         onClick={openMenu}
       >
         <a href="#intro">Home</a>
-        <a href="#tech">Tech Stack</a>
-        <a href="projects">Projects</a>
+        <a href="#tech">Tech</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         {/* <HashLink
           to="/#intro"

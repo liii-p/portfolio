@@ -6,7 +6,7 @@ import styles from "./Projects.module.scss";
 
 const Projects = () => {
   return (
-    <div className={styles.project} id="#projects">
+    <div className={styles.project} id="projects">
       <h2>Projects</h2>
       <div className={styles.project__morse}>
         <img

@@ -8,7 +8,7 @@ import { FaReact, FaJava } from "react-icons/fa";
 
 const Tech = () => {
   return (
-    <div className={styles.Tech} id="#tech">
+    <div className={styles.Tech} id="tech">
       <h2>My Tech Stack</h2>
       <p>Here are the skills and languages I've learned with Nology!</p>
       <div className={styles.Tech__stack}>

@@ -4,7 +4,7 @@ import BatmanLogo from "../Images/Batman-Logo.png";
 
 const Intro = () => {
   return (
-    <div className={styles.Intro} id="#intro">
+    <div className={styles.Intro} id="intro">
       <h1>
         Lianna Pyman <br /> Software Developer
       </h1>
