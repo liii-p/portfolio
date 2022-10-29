@@ -28,6 +28,7 @@
 
   &__para {
     font-family: "Inconsolata", monospace;
+    text-align: left;
     @include devices.phone {
       margin: 0 auto;
       color: palette.$body;
