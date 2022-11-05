@@ -14,11 +14,11 @@ const Intro = () => {
         code daily. <br />I love learning new things everyday so I can learn new
         skills and improve myself. <br /> But when I'm not learning, I'm usually
         playing games like the Batman Arkham series...or watching The Batman
-        (2022) . <br /> Some might say I like Batman too much, but I believe you
-        can never have too much Batman. <br />I love building React applications
-        for fun, as well as challenging myself to learn new technologies and
-        languages. <br /> I even like to learn spoken languages like Korean and
-        Chinese! <br />
+        (2022) . <br />I love building React applications for fun, as well as
+        challenging myself to learn new technologies and languages such as
+        Node.js and AWS! <br /> I even like to learn spoken languages like
+        Korean and Chinese! <br />
+        <hr />
         What am I currently working on? <br /> - This portfolio! <br /> - A
         react project inspired by Marvel's Daredevil (check it out{" "}
         <a href="https://github.com/liii-p/daredevil" target="blank">

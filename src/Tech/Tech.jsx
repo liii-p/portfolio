@@ -9,28 +9,73 @@ import { FaReact, FaJava } from "react-icons/fa";
 const Tech = () => {
   return (
     <div className={styles.Tech} id="tech">
+      <hr />
       <h2>My Tech Stack</h2>
-      <p>Here are the skills and languages I've learned with Nology!</p>
+      <p>
+        Here are the skills and languages I've learned with Nology! If you're on
+        desktop, hover over each icon!
+      </p>
       <div className={styles.Tech__stack}>
         <div className={styles.Tech__stack1}>
-          <BsCodeSlash size="70px" />
-          <AiFillHtml5 size="70px" color="F16528" />
-          <DiCss3Full size="70px" color="264DE4" />
-          <DiSass size="70px" color="CE679A" />
-          <SiJavascript size="70px" color="CFB02B" />
+          <BsCodeSlash size="70px" title="coding" className={styles.enlarge} />
+          <AiFillHtml5
+            size="70px"
+            color="F16528"
+            title="HTML"
+            className={styles.enlarge}
+          />
+          <DiCss3Full
+            size="70px"
+            color="264DE4"
+            title="CSS"
+            className={styles.enlarge}
+          />
+          <DiSass
+            size="70px"
+            color="CE679A"
+            title="SASS/SCSS"
+            className={styles.enlarge}
+          />
+          <SiJavascript
+            size="70px"
+            color="CFB02B"
+            title="JavaScript"
+            className={styles.enlarge}
+          />
         </div>
         <div className={styles.Tech__stack2}>
-          <FaJava size="70px" color="0D6EB6" />
-          <FaReact size="70px" color="61DBFB" />
-          <DiGit size="70px" color="F05030" />
-          <AiFillGithub size="70px" color="3F2C00" />
-          <BsFillBootstrapFill size="70px" color="8B0BFC" />
+          <FaJava
+            size="70px"
+            color="0D6EB6"
+            title="Java"
+            className={styles.enlarge}
+          />
+          <FaReact
+            size="70px"
+            color="61DBFB"
+            title="React"
+            className={styles.enlarge}
+          />
+          <DiGit
+            size="70px"
+            color="F05030"
+            title="Git"
+            className={styles.enlarge}
+          />
+          <AiFillGithub
+            size="70px"
+            color="3F2C00"
+            title="GitHub"
+            className={styles.enlarge}
+          />
+          <BsFillBootstrapFill
+            size="70px"
+            color="8B0BFC"
+            title="Bootstrap"
+            className={styles.enlarge}
+          />
         </div>
       </div>
-      {/* <p>
-        Code <br /> HTML <br /> CSS <br /> SASS <br /> JavaScript <br /> React{" "}
-        <br /> Java <br /> Git <br /> Github <br /> Bootstrap
-      </p> */}
     </div>
   );
 };

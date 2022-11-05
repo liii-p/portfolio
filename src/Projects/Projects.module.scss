@@ -3,6 +3,7 @@
 .project {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 
   @include devices.phone {
     &__morse > img {

@@ -6,6 +6,7 @@ import styles from "./Contact.module.scss";
 const Contact = () => {
   return (
     <div className={styles.contact} id="contact">
+      <hr />
       <h2>Contact</h2>
       <a href="https://www.linkedin.com/in/lianna-pyman/" target="blank">
         <AiFillLinkedin

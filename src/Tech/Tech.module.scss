@@ -3,7 +3,6 @@
 
 .Tech {
   line-height: 2.5rem;
-  border-bottom: 1.5px solid grey;
 
   @include devices.phone {
     &__stack1 {
@@ -20,4 +19,8 @@
       font-size: 35px;
     }
   }
+}
+
+.enlarge:hover {
+  transform: scale(1.5);
 }
