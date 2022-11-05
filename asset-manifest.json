@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d9de2fd3.css",
-    "main.js": "/portfolio/static/js/main.de772830.js",
+    "main.css": "/portfolio/static/css/main.a2256d76.css",
+    "main.js": "/portfolio/static/js/main.ccbbb6be.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/google-books.png": "/portfolio/static/media/google-books.6987da926bc682c70e3f.png",
     "static/media/application.png": "/portfolio/static/media/application.011d0a5b030ba15edcb4.png",
     "static/media/morse-code.png": "/portfolio/static/media/morse-code.2f5aa5577d5b9cd9a08b.png",
     "static/media/Batman-Logo.png": "/portfolio/static/media/Batman-Logo.4aa1637b5b7ab4447065.png",
     "index.html": "/portfolio/index.html",
-    "main.d9de2fd3.css.map": "/portfolio/static/css/main.d9de2fd3.css.map",
-    "main.de772830.js.map": "/portfolio/static/js/main.de772830.js.map",
+    "main.a2256d76.css.map": "/portfolio/static/css/main.a2256d76.css.map",
+    "main.ccbbb6be.js.map": "/portfolio/static/js/main.ccbbb6be.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9de2fd3.css",
-    "static/js/main.de772830.js"
+    "static/css/main.a2256d76.css",
+    "static/js/main.ccbbb6be.js"
   ]
 }
