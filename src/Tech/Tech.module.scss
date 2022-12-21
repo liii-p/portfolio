@@ -2,7 +2,17 @@
 @use "../Assets/partials/palette.scss";
 
 .Tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
   line-height: 2.5rem;
+  height: 100vh;
+
+  &__stack {
+    margin-top: 50px;
+    color: #f47c8a;
+  }
 
   @include devices.phone {
     &__stack1 {

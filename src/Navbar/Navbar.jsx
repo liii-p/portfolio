@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../Navbar/Navbar.module.scss";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../Images/logo.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -9,9 +10,13 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const closeMenu = () => {
+    setShowMenu(showMenu);
+  }
+
   return (
-    <div className={styles.Navbar}>
-      <GiHamburgerMenu onClick={openMenu} className={styles.Navbar__icon} />
+    <header className={styles.Navbar}>
+      <img src={logo} alt="Logo" id="logo"/>
       <nav
         className={showMenu ? styles.menuVisible : styles.menuHidden}
         onClick={openMenu}
@@ -20,32 +25,12 @@ const Navbar = () => {
         <a href="#tech">Tech</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        {/* <HashLink
-          to="/#intro"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          About
-        </HashLink>
-        <HashLink
-          to="/#tech"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          Tech Stack
-        </HashLink>
-        <HashLink
-          to="/#projects"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          Projects
-        </HashLink>
-        <HashLink
-          to="/#contact"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          Contact
-        </HashLink> */}
       </nav>
-    </div>
+        <FaBars onClick={openMenu} className={styles.Navbar__icon} />
+      {/* <button>
+      <FaTimes onClick={closeMenu} id="closeIcon"/>
+      </button> */}
+    </header>
   );
 };
 

@@ -4,10 +4,39 @@
 
 .Intro {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  background: linear-gradient(90deg, #9c5ce0 67%, #f47c8a 33%);
+  background-size: 100%;
+  padding-bottom: 5em;
+
+  @include devices.phone {
+    margin-top: 0;
+    height: 100vh;
+    background: none;
+  }
+
+  &__text {
+    display: inline-flex;
+    margin-top: 11em;
+
+    @include devices.phone {
+      display: block;
+    }
+  }
+
+  &__titles {
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+    @include devices.phone {
+      display: block;
+      margin: 0;
+    }
+  }
 
   h1 {
-    color: palette.$title;
+    color: palette.$accent;
     font-family: "Rubik", sans-serif;
     font-size: 35px;
 
@@ -17,7 +46,7 @@
   }
 
   h2 {
-    color: palette.$accent;
+    color: palette.$background;
     font-family: "Rubik", sans-serif;
 
     @include devices.large-phone {
@@ -26,8 +55,17 @@
   }
 
   &__para {
+    // position: fixed;
+    // right: 5%;
+    max-height: 100%;
     font-family: "Inconsolata", monospace;
     text-align: left;
+    //height: 100%;
+    background-color: palette.$accent;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
+
     @include devices.phone {
       margin: 0 auto;
       color: palette.$body;
@@ -35,10 +73,10 @@
       width: 20rem;
       height: auto;
       line-height: 40px;
+      font-size: 17px;
     }
     @include devices.large-phone {
       line-height: 45px;
-      margin: 0 auto;
       padding: 20px;
     }
   }

@@ -9,8 +9,12 @@ body {
 }
 
 html {
-  background-color: #e8d7f1;
+  background-color: #9c5ce0;
   scroll-behavior: smooth;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 code {
