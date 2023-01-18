@@ -16,17 +16,17 @@ const Navbar = () => {
 
   return (
     <header className={styles.Navbar}>
-      <img src={logo} alt="Logo" id="logo"/>
+      <img src={logo} alt="Logo" id={styles["logo"]} className={styles.Navbar__navIcons}/>
       <nav
         className={showMenu ? styles.menuVisible : styles.menuHidden}
         onClick={openMenu}
       >
-        <a href="#intro">Home</a>
+        <a href="#intro">About</a>
         <a href="#tech">Tech</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-        <FaBars onClick={openMenu} className={styles.Navbar__icon} />
+        <FaBars onClick={openMenu} className={styles.Navbar__navIcons} />
       {/* <button>
       <FaTimes onClick={closeMenu} id="closeIcon"/>
       </button> */}

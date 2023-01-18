@@ -11,6 +11,7 @@
   padding-bottom: 5em;
 
   @include devices.phone {
+    display: block;
     margin-top: 0;
     height: 100vh;
     background: none;
@@ -19,9 +20,21 @@
   &__text {
     display: inline-flex;
     margin-top: 11em;
+    position: relative;
+    color: white;
 
     @include devices.phone {
       display: block;
+      font-size: 10px;
+    }
+
+    @include devices.desktop {
+      max-width: 1201px;
+      //font-size: 25vw;
+    }
+
+    @include devices.large-desktop {
+      max-width: 1701px;
     }
   }
 
@@ -30,7 +43,6 @@
     margin-right: 10rem;
 
     @include devices.phone {
-      display: block;
       margin: 0;
     }
   }
@@ -40,6 +52,10 @@
     font-family: "Rubik", sans-serif;
     font-size: 35px;
 
+    @include devices.phone {
+      font-size: 30px;
+    }
+
     @include devices.large-phone {
       font-size: 50px;
     }
@@ -48,6 +64,10 @@
   h2 {
     color: palette.$background;
     font-family: "Rubik", sans-serif;
+
+    @include devices.phone {
+      font-size: 24px;
+    }
 
     @include devices.large-phone {
       font-size: 35px;
@@ -62,18 +82,13 @@
     text-align: left;
     //height: 100%;
     background-color: palette.$accent;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    word-break: break-all;
 
     @include devices.phone {
       margin: 0 auto;
-      color: palette.$body;
-      text-align: left;
-      width: 20rem;
-      height: auto;
+      width: 85%;
       line-height: 40px;
       font-size: 17px;
+      padding: 15px;
     }
     @include devices.large-phone {
       line-height: 45px;

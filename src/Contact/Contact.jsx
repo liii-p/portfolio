@@ -13,7 +13,7 @@ const Contact = () => {
       <a href="https://www.linkedin.com/in/lianna-pyman/" target="blank">
         <AiFillLinkedin
           size="75px"
-          color="2662A9"
+          color="F47C8A"
           className={styles.contact__linkedin}
         />
       </a>
