@@ -3,8 +3,8 @@
 @use "./../Assets/partials/fonts.scss";
 
 .Intro {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  //flex-direction: column;
 
   h1 {
     color: palette.$title;
@@ -27,7 +27,8 @@
 
   &__para {
     font-family: "Inconsolata", monospace;
-    text-align: left;
+    text-align: justify;
+    max-width: 50%;
     @include devices.phone {
       margin: 0 auto;
       color: palette.$body;
@@ -43,15 +44,15 @@
     }
   }
 
-  &__img {
+  &__flex {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 20rem;
-    height: auto;
   }
 
-  &__img:hover {
-    transform: scale(2);
+  &__headshot {
+    display: flex;
+    align-items: center;
+    img {
+      height: 50vw;
+    }
   }
 }
