@@ -5,7 +5,7 @@ import styles from "./Contact.module.scss";
 
 const Contact = () => {
   return (
-    <div className={styles.contact} id="contact">
+    <section className={styles.contact} id="contact">
       <hr />
       <h2>Contact</h2>
       <a href="https://www.linkedin.com/in/lianna-pyman/" target="blank">
@@ -18,7 +18,7 @@ const Contact = () => {
       <a href="mailto:liannapyman@gmail.com" target="blank">
         <SiGmail size="70px" color="F47C8A" className={styles.contact__gmail} />
       </a>
-    </div>
+    </section>
   );
 };
 

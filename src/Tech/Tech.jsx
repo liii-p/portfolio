@@ -3,16 +3,17 @@ import styles from "../Tech/Tech.module.scss";
 import { BsCodeSlash, BsFillBootstrapFill } from "react-icons/bs";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { DiCss3Full, DiSass, DiGit } from "react-icons/di";
-import { SiJavascript } from "react-icons/si";
-import { FaReact, FaJava } from "react-icons/fa";
+import { SiJavascript, SiTypescript } from "react-icons/si";
+import { FaReact, FaJava, FaPython } from "react-icons/fa";
 
 const Tech = () => {
   return (
-    <div className={styles.Tech} id="tech">
+    <section className={styles.Tech} id="tech">
       <hr />
       <h2>My Tech Stack</h2>
       <p>
-        Here are the skills and languages I've learned with Nology! If you're on
+        Here are the skills and languages I've learned with Nology! 
+        <br /> If you're on
         desktop, hover over each icon!
       </p>
       <div className={styles.Tech__stack}>
@@ -75,8 +76,20 @@ const Tech = () => {
             className={styles.enlarge}
           />
         </div>
+        <div>
+          <FaPython  
+          size="70px"
+            color="646464"
+            title="Python"
+            className={styles.enlarge}/>
+          <SiTypescript  
+            size="70px"
+            color="3178C6"
+            title="Typescript"
+            className={styles.enlarge}/>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,9 +1,14 @@
 @use "../Assets/partials/devices.scss";
 
 .project {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-top: 25px;
+
+  &__projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @include devices.phone {
     &__morse > img {
@@ -52,4 +57,9 @@
       width: auto;
     }
   }
+}
+
+.container {
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
 }

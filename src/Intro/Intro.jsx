@@ -4,7 +4,7 @@ import Headshot from "../Images/lianna-headshot2.JPG"
 
 const Intro = () => {
   return (
-    <div className={styles.Intro} id="intro">
+    <section className={styles.Intro} id="intro">
       <h1>
         Lianna Pyman <br /> Software Developer
       </h1>
@@ -33,7 +33,7 @@ const Intro = () => {
         <br /> - A trivia app using TypeScript and React, see it <a href="https://github.com/liii-p/trivia-app">here</a>.<br />
       </p>
       </div>
-    </div>
+    </section>
   );
 };
 

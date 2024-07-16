@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+  text-align: center;
+}
+
+h2 {
+  color: #9c5ce0;
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  line-height: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 0 1.25em;
+}
+
+section {
+  margin: 2rem 5rem;
+  height: 100%;
+}
