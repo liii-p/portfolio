@@ -1,6 +1,6 @@
-@use "./../Assets/partials/devices.scss";
-@use "./../Assets/partials/palette.scss";
-@use "./../Assets/partials/fonts.scss";
+@use "../../Assets/partials/devices.scss";
+@use "../../Assets/partials/palette.scss";
+@use "../../Assets/partials/fonts.scss";
 
 .Intro {
   display: block;
@@ -44,8 +44,13 @@
     }
   }
 
+  &__para > h2 {
+    color: black;
+  }
+
   &__flex {
     display: flex;
+    padding: 4rem 4rem;
   }
 
   &__headshot {

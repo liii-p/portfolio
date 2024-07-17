@@ -1,0 +1,43 @@
+@use "../../Assets/partials/devices.scss";
+@use "../../Assets/partials/palette.scss";
+
+.Tech {
+  line-height: 2.5rem;
+  padding: 4rem 0;
+
+  &__stack {
+    padding: 1rem;
+  }
+
+  &__stack1 {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  &__stack2 {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  @include devices.phone {
+    &__stack1 {
+      margin-bottom: 10px;
+    }
+
+    &__stack2 {
+      margin-top: 10px;
+    }
+  }
+
+  @include devices.large-phone {
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+
+.enlarge:hover {
+  transform: scale(1.5);
+}

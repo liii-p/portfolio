@@ -1,0 +1,13 @@
+.Education {
+  &__certs {
+    display: flex;
+  }
+
+  &__inProgress {
+    text-align: justify;
+  }
+}
+
+ul {
+  list-style: inside;
+}
