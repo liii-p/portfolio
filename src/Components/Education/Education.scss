@@ -1,13 +1,19 @@
 .Education {
-  &__certs {
-    display: flex;
-  }
+  height: 100vh;
+}
 
-  &__inProgress {
-    text-align: justify;
-  }
+h2 {
+  padding-top: 5rem;
+}
+
+h3 {
+  padding: 3rem 0;
 }
 
 ul {
   list-style: inside;
+}
+
+li {
+  text-align: left;
 }

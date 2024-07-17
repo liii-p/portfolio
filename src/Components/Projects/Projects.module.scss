@@ -10,53 +10,54 @@
     flex-wrap: wrap;
   }
 
-  @include devices.phone {
-    &__morse > img {
-      height: 132px;
-      width: auto;
-    }
+  // &__morse > img {
+  //   height: 500px;
+  //   width: auto;
+  // }
 
-    &__books {
-      margin-top: 20px;
-      margin-bottom: 20px;
+  // @include devices.phone {
+  //   &__morse > img {
+  //     height: 132px;
+  //     width: auto;
+  //   }
 
-      > img {
-        height: 200px;
-        width: auto;
-      }
-    }
+  //   &__books {
+  //     margin-top: 20px;
+  //     margin-bottom: 20px;
 
-    &__calc > img {
-      height: 300px;
-      width: auto;
-    }
-  }
+  //   }
+
+  //   &__calc > img {
+  //     height: 300px;
+  //     width: auto;
+  //   }
+  // }
 
   @include devices.large-phone {
     h2 {
       font-size: 35px;
     }
-
-    &__morse > img {
-      height: 185px;
-      width: auto;
-    }
-
-    &__books {
-      margin-top: 30px;
-      margin-bottom: 30px;
-
-      > img {
-        height: 280px;
-        width: auto;
-      }
-    }
-
-    &__calc > img {
-      height: 320px;
-      width: auto;
-    }
   }
+  //   &__morse > img {
+  //     height: 185px;
+  //     width: auto;
+  //   }
+
+  //   &__books {
+  //     margin-top: 30px;
+  //     margin-bottom: 30px;
+
+  //     > img {
+  //       height: 280px;
+  //       width: auto;
+  //     }
+  //   }
+
+  //   &__calc > img {
+  //     height: 320px;
+  //     width: auto;
+  //   }
+  // }
 }
 
 .container {

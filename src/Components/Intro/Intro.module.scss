@@ -3,13 +3,11 @@
 @use "../../Assets/partials/fonts.scss";
 
 .Intro {
-  display: block;
-  //flex-direction: column;
-
   h1 {
     color: palette.$title;
     font-family: "Rubik", sans-serif;
     font-size: 35px;
+    padding-top: 5rem;
 
     @include devices.large-phone {
       font-size: 50px;
@@ -19,6 +17,8 @@
   h2 {
     color: palette.$accent;
     font-family: "Rubik", sans-serif;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 
     @include devices.large-phone {
       font-size: 35px;
@@ -27,8 +27,8 @@
 
   &__para {
     font-family: "Inconsolata", monospace;
-    text-align: justify;
-    max-width: 50%;
+
+    // max-width: 50%;
     @include devices.phone {
       margin: 0 auto;
       color: palette.$body;
@@ -56,8 +56,9 @@
   &__headshot {
     display: flex;
     align-items: center;
-    img {
-      height: 50vw;
-    }
   }
+}
+
+img {
+  height: 50vw;
 }

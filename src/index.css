@@ -9,11 +9,6 @@ body {
 }
 
 html {
-  background-color: #e8d7f1;
+  /* background-color: #e8d7f1; */
   scroll-behavior: smooth;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

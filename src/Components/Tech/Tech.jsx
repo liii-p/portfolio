@@ -30,7 +30,7 @@ const Tech = () => {
             />
             <p>HTML</p>
           </container>
-          {/* <container>
+          <container>
             <DiCss3Full
               size="70px"
               color="264DE4"
@@ -38,7 +38,7 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>CSS</p>
-          </container> */}
+          </container>
           <container>
             <DiSass
               size="70px"
@@ -113,7 +113,6 @@ const Tech = () => {
             />
             <p>Bootstrap</p>
           </container>
-
           <container>
             <SiTypescript
               size="70px"

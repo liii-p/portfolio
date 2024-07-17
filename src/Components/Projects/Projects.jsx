@@ -11,10 +11,10 @@ import Image from "react-bootstrap/Image";
 const Projects = () => {
   return (
     <section className={styles.project} id="projects">
-      <Container>
+      <Container fluid>
         <h2>Projects</h2>
         <Row>
-          <Col md={true}>
+          <Col>
             <Image src={MorseCode} thumbnail />
             <p>
               Check out the github{" "}
@@ -23,7 +23,7 @@ const Projects = () => {
               </a>
             </p>
           </Col>
-          <Col md={true}>
+          <Col lg>
             <Image src={GoogleBooks} thumbnail />
             <p>
               Check out the github{" "}
@@ -32,7 +32,7 @@ const Projects = () => {
               </a>
             </p>
           </Col>
-          <Col md={true}>
+          <Col lg={4}>
             <Image src={Calculator} thumbnail />
             <p>
               Check out the github{" "}

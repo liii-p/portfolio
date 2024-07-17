@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
-import styles from "./Contact.module.scss";
+import styles from "../Contact/Contact.module.scss";
 
 const Contact = () => {
   return (

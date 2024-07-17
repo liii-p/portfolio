@@ -1,8 +1,8 @@
-@use "../Assets/partials/devices.scss";
+@use "../../Assets/partials/devices.scss";
 
 .contact {
   display: block;
-  margin-top: 5rem;
+  padding: 5rem;
 
   &__linkedin {
     margin-right: 20px;
