@@ -66,7 +66,7 @@ const Contact = () => {
             <input type="checkbox" name="botcheck" id={styles.botcheck} />
             <Row>
               <Form.Group as={Col} className="mb-3" controlId="formName">
-                <Form.Label>Name:</Form.Label>
+                <Form.Label>Name</Form.Label>
                 <Form.Control
                   placeholder="Firstname Lastname"
                   name="name"
