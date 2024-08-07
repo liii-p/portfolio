@@ -1,7 +1,6 @@
 @use "../../Assets/partials/devices.scss";
 
 .contact {
-  display: block;
   padding: 5rem;
 
   &__linkedin {
@@ -12,5 +11,17 @@
     h2 {
       font-size: 35px;
     }
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+
+  span {
+    margin-top: 10px;
+  }
+
+  #botcheck {
+    display: none;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import MorseCode from "../../Images/morse-code.png";
 import GoogleBooks from "../../Images/google-books.png";
-import Calculator from "../../Images/application.png";
+import Trivia from "../../Images/trivia-question-1a.png";
 import styles from "../Projects/Projects.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -17,27 +17,30 @@ const Projects = () => {
           <Col>
             <Image src={MorseCode} thumbnail />
             <p>
-              Check out the github{" "}
+              A morse code translator built using HTML, CSS and JavaScript. See
+              more{" "}
               <a href="https://github.com/liii-p/morse-code" target="blank">
-                here
+                here.
               </a>
             </p>
           </Col>
           <Col lg>
             <Image src={GoogleBooks} thumbnail />
             <p>
-              Check out the github{" "}
+              A React app that uses the Google books API to fetch book data
+              based on the user's search input. See more{" "}
               <a href="https://github.com/liii-p/books-app" target="blank">
-                here
+                here.
               </a>
             </p>
           </Col>
           <Col lg={4}>
-            <Image src={Calculator} thumbnail />
+            <Image src={Trivia} thumbnail />
             <p>
-              Check out the github{" "}
-              <a href="https://github.com/liii-p/JS-calculator" target="blank">
-                here
+              A trivia app built using React and Typescript. Data fetched from a
+              trivia API. See more{" "}
+              <a href="https://github.com/liii-p/trivia-app" target="blank">
+                here.
               </a>
             </p>
           </Col>

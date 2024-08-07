@@ -2,6 +2,8 @@ import styles from "../Education/Education.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { SiMicrosoftazure } from "react-icons/si";
+import { FcGoogle } from "react-icons/fc";
 
 const Education = () => {
   return (
@@ -9,6 +11,14 @@ const Education = () => {
       <Container>
         <Row>
           <h2>Education & Certifications</h2>
+        </Row>
+        <Row>
+          <div id="icons">
+            <Col>
+              <SiMicrosoftazure size="70px" color="0080FF" title="Azure" />
+              <FcGoogle size="70px" title="Google" />
+            </Col>
+          </div>
         </Row>
         <Row>
           <Col>
@@ -28,7 +38,6 @@ const Education = () => {
             </ul>
           </Col>
         </Row>
-        <Row></Row>
       </Container>
     </section>
   );
