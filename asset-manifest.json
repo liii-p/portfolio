@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.57bae766.css",
-    "main.js": "/portfolio/static/js/main.3ac119ac.js",
+    "main.css": "/portfolio/static/css/main.fe6c9888.css",
+    "main.js": "/portfolio/static/js/main.c75da961.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/lianna-headshot2.JPG": "/portfolio/static/media/lianna-headshot2.ea5e6707633e28f3575c.JPG",
+    "static/media/trivia-question-1a.png": "/portfolio/static/media/trivia-question-1a.d392451a51871dc30d96.png",
     "static/media/google-books.png": "/portfolio/static/media/google-books.2781e974467815cd3f9f.png",
     "static/media/morse-code.png": "/portfolio/static/media/morse-code.2f5aa5577d5b9cd9a08b.png",
-    "static/media/application.png": "/portfolio/static/media/application.9b08e33799f89f64467d.png",
     "index.html": "/portfolio/index.html",
-    "main.57bae766.css.map": "/portfolio/static/css/main.57bae766.css.map",
-    "main.3ac119ac.js.map": "/portfolio/static/js/main.3ac119ac.js.map",
+    "main.fe6c9888.css.map": "/portfolio/static/css/main.fe6c9888.css.map",
+    "main.c75da961.js.map": "/portfolio/static/js/main.c75da961.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57bae766.css",
-    "static/js/main.3ac119ac.js"
+    "static/css/main.fe6c9888.css",
+    "static/js/main.c75da961.js"
   ]
 }
