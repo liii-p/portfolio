@@ -39,10 +39,9 @@
   }
 
   p {
-    align-items: center;
+    //align-items: center;
+    @include devices.large-phone {
+      margin: 0 4rem 3rem 4rem;
+    }
   }
-}
-
-#title {
-  background-color: aqua;
 }
