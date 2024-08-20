@@ -1,3 +1,5 @@
+![Trivia App Test and Build](https://github.com/liii-p/portfolio/actions/workflows/main.yml/badge.svg)
+
 # My Portfolio!
 
 Hi! Hello! Welcome to my portfolio. Here you can check out some of my projects and learn a bit more about me.
