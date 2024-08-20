@@ -1,28 +1,19 @@
 name: Build and Deploy Portfolio to GitHub Pages
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push]
+permissions:
+  contents: write
 
 jobs:
-  build_test:
+  build_and_deploy:
     runs-on: windows-latest
-
-    strategy:
-      matrix:
-        version: [16, 18, 20]
-
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.version }}
-      - name: npm install and deploy
+      - name: Install and Build 🔧
         run: |
-          npm install
-          npm run deploy
+          npm ci
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
