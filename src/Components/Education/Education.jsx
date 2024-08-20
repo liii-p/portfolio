@@ -24,9 +24,7 @@ const Education = () => {
           <Col>
             <h3>In Progress</h3>
             <ul>
-              <li>Bch. Computer Science @ University of New England</li>
               <li>Google Data Analytics on Coursera</li>
-              <li>Azure Data Fundamentals certification</li>
             </ul>
           </Col>
           <Col>

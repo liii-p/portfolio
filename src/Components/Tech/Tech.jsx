@@ -48,6 +48,8 @@ const Tech = () => {
             />
             <p>SASS/SCSS</p>
           </container>
+        </div>
+        <div className={styles.Tech__stack2}>
           <container>
             <SiJavascript
               size="70px"
@@ -66,8 +68,6 @@ const Tech = () => {
             />
             <p>Python</p>
           </container>
-        </div>
-        <div className={styles.Tech__stack2}>
           <container>
             <FaJava
               size="70px"
@@ -86,6 +86,8 @@ const Tech = () => {
             />
             <p>React</p>
           </container>
+        </div>
+        <div className={styles.Tech__stack3}>
           <container>
             <DiGit
               size="70px"

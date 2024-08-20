@@ -7,18 +7,8 @@
     margin-right: 20px;
   }
 
-  @include devices.large-phone {
-    h2 {
-      font-size: 35px;
-    }
-  }
-
   p {
     margin-top: 2rem;
-  }
-
-  span {
-    margin-top: 10px;
   }
 
   #botcheck {

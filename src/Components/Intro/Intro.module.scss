@@ -27,30 +27,10 @@
 
   &__para {
     font-family: "Inconsolata", monospace;
-
-    // max-width: 50%;
-    @include devices.phone {
-      margin: 0 auto;
-      color: palette.$body;
-      text-align: left;
-      width: 20rem;
-      height: auto;
-      line-height: 40px;
-    }
-    @include devices.large-phone {
-      line-height: 45px;
-      margin: 0 auto;
-      padding: 20px;
-    }
   }
 
   &__para > h2 {
     color: black;
-  }
-
-  &__flex {
-    display: flex;
-    padding: 4rem 4rem;
   }
 
   &__headshot {
@@ -66,7 +46,3 @@
 #title {
   background-color: aqua;
 }
-
-// img {
-//   height: 50vw;
-// }

@@ -29,6 +29,12 @@
     justify-content: center;
   }
 
+  &__stack3 {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+  }
+
   @include devices.phone {
     &__stack1 {
       margin-bottom: 10px;
