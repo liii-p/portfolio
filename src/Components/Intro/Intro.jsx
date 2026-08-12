@@ -20,8 +20,7 @@ const Intro = () => {
             <p>
               Hi, I'm Lianna. I'm a frontend-focused Software Engineer with
               2+ years of experience building content-driven web apps,
-              primarily in React (Next.js, Gatsby) and TypeScript, with
-              hands-on experience in Vue.js too.
+              primarily in React (Next.js, Gatsby) and TypeScript.
             </p>
             <p>
               Before development, I spent over a year as a QA & Test

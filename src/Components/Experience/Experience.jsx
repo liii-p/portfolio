@@ -52,7 +52,6 @@ const EXPERIENCE = [
 const Experience = () => {
   return (
     <section className={styles.Experience} id="experience">
-      <hr />
       <Container fluid>
         <h2>Experience</h2>
         <div className={styles.Experience__timeline}>
