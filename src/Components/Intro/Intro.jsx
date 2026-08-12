@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Intro/Intro.module.scss";
-import Headshot from "../../Images/lianna-headshot2.JPG";
+import Headshot from "../../Images/lianna-headshot.webp";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -11,32 +11,44 @@ const Intro = () => {
       <Container fluid>
         <Row className="justify-content-center" id="title">
           <h1>
-            Lianna Pyman <br /> Software Developer
+            Lianna Pyman <br /> Software Engineer — Frontend &amp; Full-Stack
           </h1>
           <h2>About Me</h2>
         </Row>
         <Row>
           <Col>
-            <p className="text-lg-center">
-              Hi, I'm Lianna, I recently just wrapped up a little over 1 year of
-              experience at PwC as a QA & Test Automation Engineer.
-              <br /> I'm now looking to pivot to development.
-              <br /> I originally decided to go into tech because I've always
-              been surrounded by technology and was curious to learn how it
-              worked! <br />
-              My favourite tech includes Python, Java and React (either
-              Javascript or Typescript). <br /> I always enjoy the challenge of
-              learning new things and pushing the boundaries of my skillset.
-              <br />
-              In my free time, you'll find me painting with Bob Ross or reading
-              books like Pride and Prejudice.
+            <p>
+              Hi, I'm Lianna. I'm a frontend-focused Software Engineer with
+              2+ years of experience building content-driven web apps,
+              primarily in React (Next.js, Gatsby) and TypeScript, with
+              hands-on experience in Vue.js too.
+            </p>
+            <p>
+              Before development, I spent over a year as a QA & Test
+              Automation Engineer, logging 500+ defects on a Microsoft
+              CRM/ERP project at PwC. That background means I bring a strong
+              quality and reliability mindset to everything I build, not
+              just the features that look right in a demo.
+            </p>
+            <p>
+              I enjoy integrating headless CMS platforms, optimising for SEO
+              and Core Web Vitals, and working closely with designers and
+              content teams to turn Figma into production-ready code. I'm
+              also Azure Fundamentals certified and use AI tools like GitHub
+              Copilot and Claude Code daily to move faster.
+            </p>
+            <p>
+              Outside of work, you'll find me painting with Bob Ross,
+              practising piano and/or violin, or in the gym.
             </p>
           </Col>
           <Col md={5}>
             <img
               src={Headshot}
-              className="img-fluid center-block"
+              className="img-fluid"
               alt="Lianna's headshot"
+              height={300}
+              width={300}
             />
           </Col>
         </Row>

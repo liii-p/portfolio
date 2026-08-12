@@ -12,16 +12,15 @@ const Tech = () => {
       <hr />
       <h2>My Tech Stack</h2>
       <p>
-        Here are the skills and languages I've learned with Nology!
-        <br /> If you're on desktop, hover over each icon!
+        Here are some of the technologies I have learned and used
       </p>
       <div className={styles.Tech__stack}>
         <div className={styles.Tech__stack1}>
-          <container>
+          <div>
             <BsCodeSlash size="70px" title="CLI" className={styles.enlarge} />
             <p>CLI</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <AiFillHtml5
               size="70px"
               color="F16528"
@@ -29,8 +28,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>HTML</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <DiCss3Full
               size="70px"
               color="264DE4"
@@ -38,8 +37,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>CSS</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <DiSass
               size="70px"
               color="CE679A"
@@ -47,10 +46,10 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>SASS/SCSS</p>
-          </container>
+          </div>
         </div>
         <div className={styles.Tech__stack2}>
-          <container>
+          <div>
             <SiJavascript
               size="70px"
               color="CFB02B"
@@ -58,8 +57,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>Javascript</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <FaPython
               size="70px"
               color="646464"
@@ -67,8 +66,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>Python</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <FaJava
               size="70px"
               color="0D6EB6"
@@ -76,8 +75,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>Java</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <FaReact
               size="70px"
               color="61DBFB"
@@ -85,10 +84,10 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>React</p>
-          </container>
+          </div>
         </div>
         <div className={styles.Tech__stack3}>
-          <container>
+          <div>
             <DiGit
               size="70px"
               color="F05030"
@@ -96,8 +95,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>Git</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <AiFillGithub
               size="70px"
               color="3F2C00"
@@ -105,8 +104,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>GitHub</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <BsFillBootstrapFill
               size="70px"
               color="8B0BFC"
@@ -114,8 +113,8 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>Bootstrap</p>
-          </container>
-          <container>
+          </div>
+          <div>
             <SiTypescript
               size="70px"
               color="3178C6"
@@ -123,7 +122,7 @@ const Tech = () => {
               className={styles.enlarge}
             />
             <p>Typescript</p>
-          </container>
+          </div>
         </div>
       </div>
     </section>

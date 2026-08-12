@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
@@ -68,7 +70,7 @@ const Contact = () => {
               <Form.Group as={Col} className="mb-3" controlId="formName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
-                  placeholder="Firstname Lastname"
+                  placeholder="First Name Last Name"
                   name="name"
                   required
                 />

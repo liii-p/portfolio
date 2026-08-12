@@ -1,0 +1,73 @@
+@use "../../Assets/partials/devices.scss";
+@use "../../Assets/partials/palette.scss";
+
+.Experience {
+  padding: 4rem 0;
+
+  h2 {
+    padding-bottom: 2rem;
+  }
+
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  &__item {
+    border-left: 3px solid palette.$title;
+    padding-left: 1.5rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+
+    h3 {
+      font-family: "Rubik", sans-serif;
+      color: palette.$title;
+      margin: 0;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__period {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.9rem;
+    color: palette.$body;
+    white-space: nowrap;
+  }
+
+  &__company {
+    font-weight: 600;
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  @include devices.large-phone {
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  @include devices.phone {
+    &__header {
+      flex-direction: column;
+    }
+  }
+}

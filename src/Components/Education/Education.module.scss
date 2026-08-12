@@ -1,0 +1,29 @@
+.Education {
+  height: 100vh;
+
+  &__provider {
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  h2 {
+    padding-top: 5rem;
+  }
+
+  h3 {
+    padding: 3rem 0;
+  }
+
+  ul {
+    list-style: inside;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  #icons {
+    margin-top: 10px;
+  }
+}
+

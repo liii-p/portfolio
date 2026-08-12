@@ -11,7 +11,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: "20.x"
       - run: npm install
       - run: npm run build
 
@@ -35,7 +35,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: "20.x"
 
       - name: configure github pages
         uses: actions/configure-pages@v3
@@ -45,7 +45,7 @@ jobs:
       - name: upload artifacts
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./build"
+          path: "./out"
 
       - name: deploy
         id: deployment

@@ -1,30 +1,21 @@
-import styles from "../Education/Education.scss";
+import styles from "../Education/Education.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { SiMicrosoftazure } from "react-icons/si";
-import { FcGoogle } from "react-icons/fc";
 
 const Education = () => {
   return (
-    <section className={styles.Education}>
+    <section className={styles.Education} id="education">
       <Container>
         <Row>
           <h2>Education & Certifications</h2>
         </Row>
         <Row>
-          <div id="icons">
-            <Col>
-              <SiMicrosoftazure size="70px" color="0080FF" title="Azure" />
-              <FcGoogle size="70px" title="Google" />
-            </Col>
-          </div>
-        </Row>
-        <Row>
           <Col>
             <h3>In Progress</h3>
             <ul>
-              <li>Google Data Analytics on Coursera</li>
+              <li>Bachelor of Computer Science
+                <p className={styles.Education__provider}>University of New England - Part Time</p></li>
             </ul>
           </Col>
           <Col>

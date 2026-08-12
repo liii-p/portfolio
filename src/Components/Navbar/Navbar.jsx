@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import styles from "../Navbar/Navbar.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,39 +13,17 @@ const Navbar = () => {
 
   return (
     <div className={styles.Navbar}>
-      <GiHamburgerMenu onClick={openMenu} className={styles.Navbar__icon} />
+      <button><GiHamburgerMenu onClick={openMenu} className={styles.Navbar__icon} /></button>
       <nav
         className={showMenu ? styles.menuVisible : styles.menuHidden}
         onClick={openMenu}
       >
         <a href="#intro">Home</a>
-        <a href="#tech">Tech</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#tech">Tech</a>
         <a href="#contact">Contact</a>
-        {/* <HashLink
-          to="/#intro"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          About
-        </HashLink>
-        <HashLink
-          to="/#tech"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          Tech Stack
-        </HashLink>
-        <HashLink
-          to="/#projects"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          Projects
-        </HashLink>
-        <HashLink
-          to="/#contact"
-          scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
-        >
-          Contact
-        </HashLink> */}
       </nav>
     </div>
   );
