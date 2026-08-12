@@ -1,31 +1,94 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../Navbar/Navbar.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
+
+const links = [
+  { href: "#intro", label: "Home" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#tech", label: "Tech" },
+  { href: "#contact", label: "Contact" },
+];
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const openMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  const toggleMenu = () => setShowMenu((prev) => !prev);
+  const closeMenu = () => setShowMenu(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!showMenu) return undefined;
+
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") closeMenu();
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [showMenu]);
 
   return (
-    <div className={styles.Navbar}>
-      <button><GiHamburgerMenu onClick={openMenu} className={styles.Navbar__icon} /></button>
-      <nav
-        className={showMenu ? styles.menuVisible : styles.menuHidden}
-        onClick={openMenu}
-      >
-        <a href="#intro">Home</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#tech">Tech</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <header
+      className={`${styles.Navbar} ${scrolled ? styles.scrolled : ""}`}
+    >
+      <div className={styles.Navbar__inner}>
+        <a href="#intro" className={styles.Navbar__brand} onClick={closeMenu}>
+          Lianna Pyman
+        </a>
+
+        <button
+          className={styles.Navbar__menuButton}
+          onClick={toggleMenu}
+          aria-expanded={showMenu}
+          aria-controls="primary-navigation"
+          aria-label={showMenu ? "Close menu" : "Open menu"}
+        >
+          {showMenu ? (
+            <IoClose className={styles.Navbar__icon} />
+          ) : (
+            <GiHamburgerMenu className={styles.Navbar__icon} />
+          )}
+        </button>
+
+        <nav
+          id="primary-navigation"
+          className={`${styles.Navbar__links} ${
+            showMenu ? styles.isOpen : ""
+          }`}
+        >
+          {links.map(({ href, label }) => (
+            <a key={href} href={href} onClick={closeMenu}>
+              {label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      <div
+        className={`${styles.Navbar__overlay} ${
+          showMenu ? styles.isOpen : ""
+        }`}
+        onClick={closeMenu}
+        aria-hidden="true"
+      />
+    </header>
   );
 };
 
