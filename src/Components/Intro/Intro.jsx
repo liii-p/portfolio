@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Intro/Intro.module.scss";
-import Headshot from "../../Images/lianna-headshot.webp";
+import headshot from "../../Images/lianna-headshot.webp";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -44,7 +44,7 @@ const Intro = () => {
           </Col>
           <Col md={5}>
             <img
-              src={Headshot}
+              src={headshot.src}
               className="img-fluid"
               alt="Lianna's headshot"
               height={300}
@@ -53,7 +53,6 @@ const Intro = () => {
           </Col>
         </Row>
       </Container>
-      <hr />
     </section>
   );
 };

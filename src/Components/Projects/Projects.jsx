@@ -84,7 +84,7 @@ const Projects = () => {
         <Row>
           {PERSONAL_PROJECTS.map((project) => (
             <Col lg={4} key={project.title} className={styles.project__card}>
-              <Image src={project.image} thumbnail />
+              <img src={project.image.src} width={350} height={200}/>
               <h4>{project.title}</h4>
               <div className={styles.project__tags}>
                 {project.tags.map((tag) => (
