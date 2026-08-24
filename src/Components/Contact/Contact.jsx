@@ -70,7 +70,7 @@ const Contact = () => {
               <Form.Group as={Col} className="mb-3" controlId="formName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
-                  placeholder="First Name Last Name"
+                  placeholder="Your name here..."
                   name="name"
                   required
                 />

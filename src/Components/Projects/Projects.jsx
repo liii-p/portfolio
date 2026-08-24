@@ -2,6 +2,7 @@ import React from "react";
 import MorseCode from "../../Images/morse-code.png";
 import GoogleBooks from "../../Images/google-books.png";
 import Trivia from "../../Images/trivia-question-1a.webp";
+import MusicBuddy from "../../Images/tuner-selection-v2.png";
 import styles from "../Projects/Projects.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -27,14 +28,6 @@ const PROFESSIONAL_PROJECTS = [
 
 const PERSONAL_PROJECTS = [
   {
-    title: "Morse Code Translator",
-    image: MorseCode,
-    tags: ["HTML", "CSS", "JavaScript"],
-    description:
-      "A morse code translator built using HTML, CSS and JavaScript.",
-    link: "https://github.com/liii-p/morse-code",
-  },
-  {
     title: "Google Books Search",
     image: GoogleBooks,
     tags: ["React", "Google Books API"],
@@ -49,6 +42,14 @@ const PERSONAL_PROJECTS = [
     description:
       "A trivia app built using React and TypeScript, with data fetched from a trivia API.",
     link: "https://github.com/liii-p/trivia-app",
+  },
+  {
+    title: "Music Buddy",
+    image: MusicBuddy,
+    tags: ["React", "TypeScript", "NextJS"],
+    description:
+      "WIP musicians' dream app. Includes a tuner, metronome and practice tracker (to be integrated with AI) to deliver the complete experience for musicians.",
+    link: "https://github.com/liii-p/music-buddy",
   },
 ];
 
@@ -84,7 +85,7 @@ const Projects = () => {
         <Row>
           {PERSONAL_PROJECTS.map((project) => (
             <Col lg={4} key={project.title} className={styles.project__card}>
-              <img src={project.image.src} width={350} height={200}/>
+              <img src={project.image.src} width={350} height={200} />
               <h4>{project.title}</h4>
               <div className={styles.project__tags}>
                 {project.tags.map((tag) => (
