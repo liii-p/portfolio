@@ -28,6 +28,14 @@ const PROFESSIONAL_PROJECTS = [
 
 const PERSONAL_PROJECTS = [
   {
+    title: "Music Buddy",
+    image: MusicBuddy,
+    tags: ["React", "TypeScript", "NextJS"],
+    description:
+      "WIP musicians' dream app. Includes a tuner, metronome and practice tracker (to be integrated with AI) to deliver the complete experience for musicians.",
+    link: "https://github.com/liii-p/music-buddy",
+  },
+  {
     title: "Google Books Search",
     image: GoogleBooks,
     tags: ["React", "Google Books API"],
@@ -42,14 +50,6 @@ const PERSONAL_PROJECTS = [
     description:
       "A trivia app built using React and TypeScript, with data fetched from a trivia API.",
     link: "https://github.com/liii-p/trivia-app",
-  },
-  {
-    title: "Music Buddy",
-    image: MusicBuddy,
-    tags: ["React", "TypeScript", "NextJS"],
-    description:
-      "WIP musicians' dream app. Includes a tuner, metronome and practice tracker (to be integrated with AI) to deliver the complete experience for musicians.",
-    link: "https://github.com/liii-p/music-buddy",
   },
 ];
 
